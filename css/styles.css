@@ -1,0 +1,376 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Mukta', sans-serif;
+    background-color: black;
+    margin: 0px;
+    padding: 0px; 
+    list-style: none;
+}
+#header{
+    margin-top: 0px;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/fondo_1.jpg);
+    height: 960px;
+}
+#header #nav-container{
+    display: flex;
+    background-color: black;
+    opacity: 1;
+   position: fixed;
+   z-index: 10;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 0.5rem;
+   width: 100%;
+   height: 25px;
+}
+#header #nav-container #logo{
+    font-size: 2.1rem;
+    color: white;
+}
+.hamburger {
+    display: none;
+}
+.hamburger .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.navbar .nav-item{
+    margin-left: 5rem;
+}
+.navbar .nav-item .nav-link{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+}
+.navbar li .nav-link:hover{
+    color: #199cff;
+}
+#header #nav-container .navbar #active .nav-link:hover{
+    color: #199cff;
+}
+#header #nav-container .navbar #active .nav-link{
+    color: #199cff;
+    font-size: 23px ;
+    font-weight: 700;
+}
+#header #nav-container .btn_menu{
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+#presentacion{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+#presentacion h1{
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 300px;
+    color: #199cff;
+    font-size: 70px;
+}
+#presentacion h2{
+    color: white;
+    margin-left: 0px;
+    font-size: 40px; 
+}
+#presentacion h3{
+    color: white;
+    margin-left: 0px;
+    font-size: 30px; 
+}
+
+#principal{
+    width: 100%;
+    height: 100%;
+}
+#principal #info{
+    width: 100%;
+    height: 750px;
+    display: flex;
+}
+#principal #info #img-container{
+    justify-content: flex-start;
+    width: 40%;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+#principal #info #img-container img{
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 250px;
+    margin-top: 120px;
+}
+#principal #info #about-container{
+    width: 100%;
+    height: 100%;
+}
+#principal #info #about-container h3{
+    color: #199cff;
+    width: 60%;
+    font-size: 30px;
+    margin-top: 150px;
+    margin-left: 300px;
+}
+#principal #info #about-container p{
+    color: white;
+    width: 60%;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+#skills-container{
+    width: 100%;
+    height: 650px;
+}
+#skills-container h3{
+    color: #199cff;
+    font-size: 40px;
+    text-align: center;
+}
+#skills-container #skills{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+#skills-container #skills .item{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 100px;
+}
+#skills-container #skills .item i{
+    display: flex;
+    color: gray;
+    font-size: 70px;
+    justify-content: center;
+    position: absolute;
+}
+#skills-container #skills .item p{
+    color: gray;
+    display: flex;
+    margin-top: 70px;
+}
+#skills-container #sub-title{
+    margin-top: 80px;
+}
+#skills-container #in-learning{
+    display: flex;
+    width: 60%;
+    margin-top: 80px;
+    justify-content: center;
+    margin-left: 20%;
+}
+#skills-container #in-learning .item{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+#skills-container #in-learning .item i{
+    display: flex;
+    color: gray;
+    font-size: 70px;
+    justify-content: center;
+    position: absolute;
+}
+#skills-container #in-learning .item p{
+    color: gray;
+    display: flex;
+    margin-top: 70px;
+}
+#skills-container #skills .item i:hover{
+    font-size: 75px;
+    color: white;
+    transition: all 200ms;
+}
+#skills-container #skills .item i:hover ~ p{
+    font-size: 20px;
+    margin-top: 72px;
+    color: white;
+    transition: all 200ms;
+}
+#skills-container #in-learning .item i:hover{
+    color: white;
+    font-size: 75px;
+    transition: all 200ms;
+}
+#skills-container #in-learning .item i:hover ~ p{
+    color: white;
+    font-size: 20px;
+    margin-top: 72px;
+    transition: all 200ms;
+}
+#proyect-container{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/fondo_3.jpg);
+    
+}
+#proyect-container #tit-container{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    justify-content: space-around;
+    background-color: rgba(0,0,0,0.6);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+#proyect-container #tit-container h3{
+    color: #199cff;
+    text-align: center;
+    font-size: 40px;
+    justify-content: center;
+    width: 100%;
+}
+#proyect-container #proyects{
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow: row wrap;
+}
+#proyect-container #proyects .proy{
+    display: flex;
+    width: 32%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    position: relative;
+    flex-flow: row wrap;
+    background-position: center;
+}
+#proyect-container #proyects .proy .descripcion{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-image:url(../img/engranaje2.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#proyect-container #proyects .proy .descripcion p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    opacity: 0;
+}
+#proyect-container #proyects .proy .i-container{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+    justify-content: start;
+    
+}
+#proyect-container #proyects .proy i{
+    display: flex;
+    color: white;
+    font-size: 25px;
+    margin-left: 10px; 
+}
+#proyect-container #proyects .proy .descripcion:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../img/engranaje2.png);
+    transition: all 500ms;
+}
+#proyect-container #proyects .proy .descripcion:hover p{
+    opacity: 1;
+    transition: all 500ms;
+}
+#contact-container{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact-container #tit-container{
+    width: 100%;
+    height: 0px;
+    margin-top: 15px;
+    padding: 0px;
+}
+#contact-container #tit-container h4{
+    color: #199cff;
+    text-align: center;
+    font-size: 35px;
+}
+#contact-container #tit-container p{
+    color: white;
+    text-align: center;
+}
+#contact-container #form-container{
+    width: 70%;
+    height: auto;
+    margin-top: 25px;
+    padding: 0px;
+    display: flex;
+    align-content: top;
+    justify-content: center ;
+    flex-flow: row wrap;
+}
+#contact-container #form-container #submit:hover{
+    background-color: #199cff;
+}
+#contact-container #form-container input{
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+}
+#contact-container #form-container textarea{
+    width: 60%;
+    height: 100px;
+    border-radius: 10px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+}
+#contact-container #contact{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+#contact-container #contact i{
+    color: gray;
+    font-size: 30px;
+}
+#contact-container #contact i:hover{
+    color: white;
+    transition: all 200ms;
+}
+ul.show{
+    top: 65px;
+}
